@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+/* possible color palette */
+/*
+#e8443c - red
+#e94445 - lighter red
+#264c5e - bluish grey
+#a34c50 - darker red
+#cec2ae - greyish tan
+#4a2932 - even darker red
+*/
+
+/* Default tag stylings */
+* {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+li {
+    list-style: none;
+}
+
+/* navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #264c5e;
+    color: #fff
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 45px;
+}
+
+.navbar-left-container {
+    display: flex;
+}
+
+.navbar-left-container .mamb-logo {
+
+}
+
+.navbar-left-list {
+    display: flex;
+}
+
+.navbar-right-container {
+    display: flex;
+}
