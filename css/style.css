@@ -10,11 +10,31 @@
 #4a2932 - even darker red
 */
 
+/* possible class colors */
+/*
+#E7623E - Barbarian (Orange)
+#AB6DAC - Bard (Pink)
+#91A1B2 - Cleric
+#7A853B - Druid (Green)
+#7F513E - Fighter (Brown)
+#51A5C5 - Monk (Light blue)
+#B59E54 - Paladin (Gold)
+#507F62 - Ranger (Dark green)
+#555752 - 
+#992E2E
+#7B469B
+#2A50A1
+*/
+
 /* Default tag stylings */
 * {
     font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: #cec2ae;
 }
 
 a {
@@ -24,6 +44,17 @@ a {
 
 li {
     list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 0.35em;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    transition: all 0.2s;
 }
 
 /* navbar styling */
@@ -47,13 +78,21 @@ li {
 }
 
 .navbar-left-container .mamb-logo {
-
+    padding-right: 80px;
 }
 
 .navbar-left-list {
     display: flex;
 }
 
-.navbar-right-container {
-    display: flex;
+.navbar-left-list > li {
+    padding-right: 30px;
+}
+
+.navbar-right-container .login-btn {
+    background-color: #264c5e;
+}
+
+.navbar-right-container .login-btn:hover {
+    background-color: #4a2932;
 }
