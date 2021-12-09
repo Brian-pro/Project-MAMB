@@ -89,10 +89,22 @@ li {
     padding-right: 30px;
 }
 
+.navbar-left-list > li > a {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 6px;
+    transition: all 0.2s;
+}
+
+.navbar-left-list > li > a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+}
+
 .navbar-right-container .login-btn {
     background-color: #264c5e;
 }
 
 .navbar-right-container .login-btn:hover {
-    background-color: #4a2932;
+    background-color: #305d72;
+    border: 1px solid #000;
 }
