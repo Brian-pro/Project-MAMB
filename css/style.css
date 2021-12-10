@@ -121,10 +121,6 @@ li {
     top: 0;
 }
 
-.show {
-    display: flex;
-}
-
 .login-container {
     position: relative;
     width: 450px;

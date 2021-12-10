@@ -4,13 +4,16 @@ const closeLoginButton = document.querySelector('.close-login');
 
 /* Event listeners */
 loginButton.addEventListener('click', showLoginPopup);
-closeLoginButton.addEventListener('click', closeLoginPopup);
+closeLoginButton.addEventListener("click", closeLoginPopup);
 
 /* Functions */
 function showLoginPopup(event) {
-    document.querySelector('.login-background').classList.add('show');
+    event.preventDefault();
+    document.querySelector('.login-background').setAttribute('style', 'display: flex');
 }
 
-function closeLoginPopup() {
-    document.querySelector('.login-background').style.display = 'none';
+
+function closeLoginPopup(event) {
+    event.preventDefault();
+    document.querySelector('.login-background').setAttribute('style', 'display: none');
 }
