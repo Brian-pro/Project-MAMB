@@ -111,7 +111,7 @@ li {
 }
 
 .login-background {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -119,6 +119,10 @@ li {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
+}
+
+.show {
+    display: flex;
 }
 
 .login-container {
