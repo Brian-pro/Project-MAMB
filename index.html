@@ -39,11 +39,22 @@
     <!-- login modal popup -->
     <div class="login-background">
         <div class="login-container">
-            <div class="close-login"><strong>+</strong></div>
-            <h3>Sign In</h3>
-            <form action="">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Password">
+            <div class="close-login">+</div>
+            <form>
+                <h1>Sign In</h1>
+                <div class="input-container">
+                    <label for="username">Username or Email</label>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="text" placeholder="Password">
+                </div>
+                <div class="form-btn-center">
+                    <button type="submit" class="login-continue-btn">Continue</button>
+                </div>
+                <a href="" class="forgot-pw-link">Forgot your password?</a>
+                <a href="" class="create-account-link">Don't have an account? Create account</a>
             </form>
         </div>
     </div>

@@ -128,15 +128,40 @@ li {
     background-color: #fff;
     color: #000;
     border-radius: 5px;
-    text-align: center;
     padding: 20px;
 }
 
 .close-login {
     position: absolute;
+    float: ;
     cursor: pointer;
     font-size: 40px;
-    top: 0px;
-    right: 10px;
     transform: rotate(45deg);
+    transition: color 0.2s;
+}
+
+.close-login:hover {
+    color: red;
+}
+
+.input-container > label {
+    display: block;
+    font-size: 16px;
+}
+
+.login-container > a {
+    color: #000;
+}
+
+.login-container > a:hover {
+    text-decoration: underline;
+}
+
+.login-container > .login-continue-btn {
+
+}
+
+.login-container > .form-btn-center {
+    display: flex;
+    justify-content: center;
 }
