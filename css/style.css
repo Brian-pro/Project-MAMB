@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400&display=swap');
 
 /* possible color palette */
 /*
@@ -28,7 +28,7 @@
 
 /* Default tag stylings */
 * {
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -39,7 +39,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff
 }
 
 li {
@@ -81,6 +80,10 @@ li {
     padding-right: 80px;
 }
 
+.navbar-left-container .mamb-logo > a{
+    color: #fff;
+}
+
 .navbar-left-list {
     display: flex;
 }
@@ -91,6 +94,7 @@ li {
 
 .navbar-left-list > li > a {
     border-bottom: 2px solid transparent;
+    color: #fff;
     padding-bottom: 6px;
     transition: all 0.2s;
 }
@@ -123,8 +127,7 @@ li {
 
 .login-container {
     position: relative;
-    width: 450px;
-    height: 500px;
+    width: 410px;
     background-color: #fff;
     color: #000;
     border-radius: 5px;
@@ -133,10 +136,10 @@ li {
 
 .close-login {
     position: absolute;
-    float: ;
     cursor: pointer;
-    font-size: 40px;
-    transform: rotate(45deg);
+    font-size: 23px;
+    top: 15px;
+    right: 10px;
     transition: color 0.2s;
 }
 
@@ -144,16 +147,36 @@ li {
     color: red;
 }
 
+.login-header {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.input-container {
+    width: 100%;
+    height: 45px;
+    padding-bottom: 40px;
+}
+
+.input-container:first-child {
+   padding-top: 10px;
+}
+
 .input-container > label {
     display: block;
     font-size: 16px;
 }
 
-.login-container > a {
-    color: #000;
+.input-container > input {
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    font-size: 16px;
 }
 
-.login-container > a:hover {
+.forgot-pw-container > a:hover {
     text-decoration: underline;
 }
 
@@ -161,7 +184,16 @@ li {
 
 }
 
-.login-container > .form-btn-center {
+.form-btn-center {
     display: flex;
     justify-content: center;
+}
+
+.create-acc-container {
+    display: flex;
+    justify-content: center;
+}
+
+.create-acc-container > a:hover {
+    text-decoration: underline;
 }
