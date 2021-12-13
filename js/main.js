@@ -14,6 +14,7 @@ closeLoginButton.addEventListener("click", closeLoginPopup);
 */
 function showLoginPopup(event) {
     event.preventDefault();
+    console.log("Hello")
     document.querySelector('.login-background').setAttribute('style', 'display: flex');
 }
 
