@@ -14,16 +14,16 @@
 /*
 #E7623E - Barbarian (Orange)
 #AB6DAC - Bard (Pink)
-#91A1B2 - Cleric
+#91A1B2 - Cleric (Silver)
 #7A853B - Druid (Green)
 #7F513E - Fighter (Brown)
 #51A5C5 - Monk (Light blue)
 #B59E54 - Paladin (Gold)
 #507F62 - Ranger (Dark green)
-#555752 - 
-#992E2E
-#7B469B
-#2A50A1
+#555752 - Rogue (Grey)
+#992E2E - Sorcerer (Red)
+#7B469B - Warlock (Purple)
+#2A50A1 - Wizard (Blue)
 */
 
 /* Default tag stylings / Utility CSS */
@@ -34,6 +34,7 @@
 }
 
 body {
+    margin-top: 45px;
     background-color: #cec2ae;
 }
 
@@ -78,6 +79,10 @@ li {
 
 /* navbar styling */
 .navbar {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: #264c5e;
@@ -193,6 +198,10 @@ li {
     justify-content: center;
 }
 
+.create-acc-container > a {
+    padding-left: 3px;
+}
+
 .create-acc-container > a:hover {
     text-decoration: underline;
 }
@@ -217,3 +226,10 @@ li {
 .header-btn-container {
 
 }
+
+.header-btn {
+    font-size: 20px;
+    margin: 10px; 
+}
+
+/* Footer */
