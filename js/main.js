@@ -1,6 +1,6 @@
 /* Selectors */
-const loginButton = document.querySelector('.navbar-right-container');
-const closeLoginButton = document.querySelector('.close-login');
+const loginButton = document.querySelector('.login-btn');
+const closeLoginButton = document.querySelector('.close-modal');
 
 /* Event listeners */
 loginButton.addEventListener('click', showLoginPopup);

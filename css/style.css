@@ -26,7 +26,7 @@
 #2A50A1
 */
 
-/* Default tag stylings */
+/* Default tag stylings / Utility CSS */
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -46,6 +46,7 @@ li {
 }
 
 .btn {
+    background: #264c5e;
     display: inline-block;
     border: 1px solid #fff;
     border-radius: 2px;
@@ -53,7 +54,26 @@ li {
     box-sizing: border-box;
     text-align: center;
     color: #fff;
+    cursor: pointer;
     transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: #305d72;
+    border: 1px solid #000;
+}
+
+.close-modal {
+    position: absolute;
+    cursor: pointer;
+    font-size: 23px;
+    top: 15px;
+    right: 10px;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: red;
 }
 
 /* navbar styling */
@@ -100,20 +120,12 @@ li {
 }
 
 .navbar-left-list > li > a:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #d1cfcf;
+    color: #d1cfcf;
     padding-bottom: 3px;
 }
 
-/* Navbar Right side / login button */
-.navbar-right-container .login-btn {
-    background-color: #264c5e;
-}
-
-.navbar-right-container .login-btn:hover {
-    background-color: #305d72;
-    border: 1px solid #000;
-}
-
+/* Login Popup Modal Styling */ 
 .login-background {
     display: none;
     justify-content: center;
@@ -132,19 +144,6 @@ li {
     color: #000;
     border-radius: 5px;
     padding: 20px;
-}
-
-.close-login {
-    position: absolute;
-    cursor: pointer;
-    font-size: 23px;
-    top: 15px;
-    right: 10px;
-    transition: color 0.2s;
-}
-
-.close-login:hover {
-    color: red;
 }
 
 .login-header {
@@ -196,4 +195,25 @@ li {
 
 .create-acc-container > a:hover {
     text-decoration: underline;
+}
+
+/* Header Section */
+.header {
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    text-align: center;
+    font-size: 25px;
+}
+
+.header-title {
+    text-decoration: underline;
+}
+
+.header-btn-container {
+
 }

@@ -15,7 +15,7 @@
         <div class="navbar-container">
             <div class="navbar-left-container">
                 <div class="mamb-logo">
-                    <a href="index.html">
+                    <a href="/">
                         Project MAMB
                     </a>
                 </div>
@@ -26,21 +26,23 @@
                     <li><a href="">Journal</a></li>
                     <li><a href="pages/spellDictionary.html">Spell Dictionary</a></li>
                     <li><a href="">Encountered Monsters</a></li>
+                    <li><a href="">Blog</a></li>
                 </ul>
             </div>
             <div class="navbar-right-container">
-                <a href="">
-                    <div class="login-btn btn">
-                        Log In
-                    </div>
-                </a>
+                <button class="login-btn btn">
+                    Log In
+                </button>
+                <button class="signup-btn btn">
+                    Sign Up
+                </button>
             </div>
         </div>
     </nav>
     <!-- login modal popup -->
     <div class="login-background">
         <div class="login-container">
-            <i class="fas fa-times close-login"></i>
+            <i class="fas fa-times close-modal"></i>
             <div class="login-header">Login</div>
             <form>
                 <div class="input-container">
@@ -55,7 +57,7 @@
                     <a href="" class="forgot-pw-link">Forgot your password?</a>
                 </div>
                 <div class="form-btn-center">
-                    <button type="submit" class="login-continue-btn">Continue</button>
+                    <button type="submit" class="login-continue-btn btn">Continue</button>
                 </div>
                 <div class="create-acc-container">
                     <span>Don't have an account? </span><a href="" class="create-account-link"> Create account</a>
@@ -63,7 +65,19 @@
             </form>
         </div>
     </div>
-
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <h4>Welcome and thank you for visiting...</h4>
+            <h1 class="header-title">Project MAMB</h3>
+            <div class="header-text-1">Join now and enhance your tabletop experience!</div>
+            <div class="header-btn-container">
+                <button class="btn">Join Now</button>
+                <button class="btn">What's New?</button>
+                <button class="btn">Contact Us</button>
+            </div>
+        </div>
+    </header>
     
     <script src="js/main.js"></script>
 </body>
