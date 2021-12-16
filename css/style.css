@@ -242,7 +242,7 @@ li {
 
 /* Header Styling */
 .header {
-    height: 520px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,4 +266,11 @@ li {
     margin: 10px; 
 }
 
-/* Footer */
+/* Footer Styling */
+.footer-container {
+    text-align: center;
+}
+
+.footer-top-section {
+    
+}
