@@ -22,13 +22,15 @@ closeSignupButton.addEventListener('click', closePopup);
 */
 function showPopup(event) {
     event.preventDefault();
-    console.log(event.target.classList[0]);
+
     if(event.target.classList[0] === 'login-btn') {
         document.querySelector('.login-background').setAttribute('style', 'display: flex');
+        document.querySelector('.signup-background').setAttribute('style', 'display: none');
     }
     else {
         document.querySelector('.signup-background').setAttribute('style', 'display: flex');
-    }  
+        document.querySelector('.login-background').setAttribute('style', 'display: none');
+    }
 }
 
 /* closeLoginPopup
@@ -37,7 +39,7 @@ function showPopup(event) {
 */
 function closePopup(event) {
     event.preventDefault();
-    console.log(event.target.classList[2]);
+    
     if (event.target.classList[2] === 'close-login-modal') {
         document.querySelector('.login-background').setAttribute('style', 'display: none');
     }
