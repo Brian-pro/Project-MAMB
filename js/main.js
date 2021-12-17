@@ -1,16 +1,18 @@
 /* Selectors */
-const loginButton = document.querySelector('.login-btn');
-const signupButton = document.querySelector('.signup-btn');
-const signupButton2 = document.querySelector('.signup-btn-2');
-const closeLoginButton = document.querySelector('.close-login-modal');
-const closeSignupButton = document.querySelector('.close-signup-modal');
+const loginButton = document.querySelectorAll('.login-btn');
+const signupButton = document.querySelectorAll('.signup-btn');
+const closeModal = document.querySelectorAll('.close-modal');
 
 /* Event listeners */
-loginButton.addEventListener('click', showPopup);
-signupButton.addEventListener('click', showPopup);
-signupButton2.addEventListener('click', showPopup);
-closeLoginButton.addEventListener('click', closePopup);
-closeSignupButton.addEventListener('click', closePopup);
+loginButton.forEach(btn => {
+    btn.addEventListener('click', showPopup);
+});
+signupButton.forEach(btn => {
+    btn.addEventListener('click', showPopup);
+});
+closeModal.forEach(btn => {
+    btn.addEventListener('click', closePopup)
+});
 
 /* Functions */
 
@@ -40,10 +42,6 @@ function showPopup(event) {
 function closePopup(event) {
     event.preventDefault();
     
-    if (event.target.classList[2] === 'close-login-modal') {
-        document.querySelector('.login-background').setAttribute('style', 'display: none');
-    }
-    else {
-        document.querySelector('.signup-background').setAttribute('style', 'display: none');
-    }
+    document.querySelector('.signup-background').setAttribute('style', 'display: none');
+    document.querySelector('.login-background').setAttribute('style', 'display: none');
 }

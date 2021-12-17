@@ -64,6 +64,19 @@ li {
     border: 1px solid #000;
 }
 
+.close-modal {
+    position: absolute;
+    cursor: pointer;
+    font-size: 23px;
+    top: 15px;
+    right: 10px;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: red;
+}
+
 /* navbar styling */
 .navbar {
     position: fixed;
@@ -227,22 +240,9 @@ li {
     padding: 20px;
 }
 
-.close-signup-modal {
-    position: absolute;
-    cursor: pointer;
-    font-size: 23px;
-    top: 15px;
-    right: 10px;
-    transition: color 0.2s;
-}
-
-.close-signup-modal:hover {
-    color: red;
-}
-
 /* Header Styling */
 .header {
-    height: 600px;
+    height: 668px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,8 +269,32 @@ li {
 /* Footer Styling */
 .footer-container {
     text-align: center;
+    font-size: 13.5px;
 }
 
 .footer-top-section {
-    
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container ul {
+    display: flex;
+    margin-left: 40px;
+}
+.footer-container li {
+    margin-right: 20px;
+}
+
+.footer-container a {
+    text-decoration: underline;
+}
+
+.footer-bottom-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.dnd-rights-disclaimer {
+    width: 75%;
 }
