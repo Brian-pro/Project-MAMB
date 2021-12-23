@@ -2,6 +2,8 @@
 const loginButton = document.querySelectorAll('.login-btn');
 const signupButton = document.querySelectorAll('.signup-btn');
 const closeModal = document.querySelectorAll('.close-modal');
+const createAcc = document.querySelectorAll('.singup-continue-btn');
+
 
 /* Event listeners */
 loginButton.forEach(btn => {
@@ -13,9 +15,19 @@ signupButton.forEach(btn => {
 closeModal.forEach(btn => {
     btn.addEventListener('click', closePopup)
 });
+createAcc.forEach(btn => {
+    btn.addEventListener('click', createAccount);
+});
+
+/* Temporary user data */ 
+var userAccounts = [
+    {
+        email: 'bob@123.com',
+        password: 'pizza'
+    }
+]
 
 /* Functions */
-
 /* showLoginPopup
     - Allows navbar login button to display login modal
       popup. Done by changing from display: none -> display: flex
@@ -44,4 +56,17 @@ function closePopup(event) {
     
     document.querySelector('.signup-background').setAttribute('style', 'display: none');
     document.querySelector('.login-background').setAttribute('style', 'display: none');
+}
+
+/* createAccount
+    - 
+*/
+function createAccount(event) {
+    event.preventDefault();
+    var newEmail = document.querySelector('.newEmail').value;
+    var newPassword = document.querySelector('.newPassword').value;
+
+    console.log(newEmail + ' is your email and your password is ' + newPassword);
+
+    // userAccounts.push();
 }
